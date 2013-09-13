@@ -34,7 +34,12 @@ class TweetFetch extends CAction {
             if ($this->cache_reset) {
                 Yii::app()->cache->delete($CFID);
             }
-            //$data = Yii::app()->cache->get($CFID);
+            if(Yii::app()->cache != null){
+            	$data = Yii::app()->cache->get($CFID);
+            }
+            else{
+            	$data = false;
+            }
 
             if ($data !== false) {
                 return $data;
