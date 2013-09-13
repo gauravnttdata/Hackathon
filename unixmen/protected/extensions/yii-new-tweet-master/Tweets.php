@@ -61,6 +61,7 @@ class Tweets extends CWidget {
     private $_assetsUrl = null;
 
     public function init() {
+    	var_dump($this);
         if (!$this->id) {
             $this->id = $this->getId();
         }
