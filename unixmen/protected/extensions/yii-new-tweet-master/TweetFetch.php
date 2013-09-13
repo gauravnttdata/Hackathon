@@ -8,15 +8,15 @@
 class TweetFetch extends CAction {
 
 // Your Twitter App Consumer Key
-    private $consumer_key = ' ... ';
-    private $consumer_secret = ' ... ';
-    private $user_token = ' ... ';
-    private $user_secret = ' ... ';
+    private $consumer_key = '3815qj27yo1s3ZKAuZMBrg';
+    private $consumer_secret = '7ORvn3V83uZs3PvDp17ZFww2rmNN35fTDTdZJ4MJROY';
+    private $user_token = '76375236-5Exmg74VViYWaZVJqbaY8RjOgChdKyN5LnX5XBiCj';
+    private $user_secret = '43vMwa5QVaan134tJveFth0rF2HAXm2PVHMGdh10';
     private $cache_enabled = true;
     private $cache_reset = false;
     private $cache_interval = 5;
     private $debug = false;
-    private $message = '';
+    private $message = 'Fetching Tweets Message.';
 
     public function run() {
         echo json_encode(

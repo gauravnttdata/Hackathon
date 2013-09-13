@@ -18,6 +18,9 @@ class SiteController extends Controller
 			'page'=>array(
 				'class'=>'CViewAction',
 			),
+			'get_tweets' => array(
+					'class' => 'ext.new-tweet.TweetFetch'
+			)
 		);
 	}
 
