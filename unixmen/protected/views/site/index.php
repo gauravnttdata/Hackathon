@@ -16,7 +16,7 @@ $this->pageTitle=Yii::app()->name;
 <?php $this->widget('ext.yii-new-tweet-master.Tweets', array(
     'id' => 'twitter-feed',
     'csrfToken' => true, // set this to true if you enabled CSRF validation
-    'proxyController' => $this->createUrl('my_controller/get_tweets'), // You need to specify this!
+    'proxyController' => $this->createUrl('site/get_tweets'), // You need to specify this!
     'username' => array('narendramodi', 'AnupamPkher', 'BDUTT'), // as you can see you can add an array of usernames
     'cssFile' => false, // if you don't want the default CSS file
     //'cssFile'=>Yii::app()->theme->baseUrl.'/css/tweet-master.css', // customize your twitter css file
@@ -26,7 +26,7 @@ $this->pageTitle=Yii::app()->name;
         'count' => 6
     )
 ));?>
-<?php $this->get_tweets?>
+
 <p>For more details on how to further develop this application, please read
 the <a href="http://www.yiiframework.com/doc/">documentation</a>.
 Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
