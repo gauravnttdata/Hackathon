@@ -26,6 +26,7 @@ $this->pageTitle=Yii::app()->name;
         'count' => 6
     )
 ));?>
+<?php $this->get_tweets?>
 <p>For more details on how to further develop this application, please read
 the <a href="http://www.yiiframework.com/doc/">documentation</a>.
 Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,

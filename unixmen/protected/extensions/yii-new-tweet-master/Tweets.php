@@ -93,7 +93,7 @@ class Tweets extends CWidget {
 
     public function run() {
         $options = CJSON::encode($this->options);
-        var_dump($options);
+        //var_dump($options);
         Yii::app()->clientScript->registerScript('tweet' . $this->id, "jQuery('#{$this->id}').tweet({$options})");
 
         echo CHtml::tag($this->tag, $this->tagOptions, '');
