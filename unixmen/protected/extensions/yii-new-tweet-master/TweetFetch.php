@@ -110,8 +110,10 @@ class TweetFetch extends CAction {
 
         $url = $_POST['request']['url'];
         $params = $_POST['request']['parameters'];
-
+var_dump($url);
+var_dump($params);
         $tmhOAuth->request('GET', $tmhOAuth->url($url), $params);
+        var_dump($tmhOAuth->response);
         return $tmhOAuth->response;
     }
 
