@@ -100,7 +100,7 @@ class TweetFetch extends CAction {
         require_once dirname(__FILE__) . '/lib/tmhUtilities.php';
 
         $tmhOAuth = new tmhOAuth(array(
-            'host' => $_POST['request']['host'],
+            'host' => $_REQUEST['request']['host'],
             'consumer_key' => $this->consumer_key,
             'consumer_secret' => $this->consumer_secret,
             'user_token' => $this->user_token,
