@@ -15,7 +15,7 @@ class TweetFetch extends CAction {
     private $cache_enabled = true;
     private $cache_reset = false;
     private $cache_interval = 5;
-    private $debug = false;
+    private $debug = true;
     private $message = 'Fetching Tweets Message.';
 
     public function run() {
