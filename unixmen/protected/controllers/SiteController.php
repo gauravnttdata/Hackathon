@@ -19,7 +19,7 @@ class SiteController extends Controller
 				'class'=>'CViewAction',
 			),
 			'get_tweets' => array(
-					'class' => 'ext.new-tweet.TweetFetch'
+					'class' => 'ext.yii-new-tweet-master.TweetFetch'
 			)
 		);
 	}
