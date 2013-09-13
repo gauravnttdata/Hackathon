@@ -13,7 +13,7 @@ $this->pageTitle=Yii::app()->name;
 	<li>View file: <code><?php echo __FILE__; ?></code></li>
 	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
 </ul> -->
-<?php $this->widget('ext.new-tweet.Tweets', array(
+<?php $this->widget('ext.yii-new-tweet-master.Tweets', array(
     'id' => 'twitter-feed',
     'csrfToken' => true, // set this to true if you enabled CSRF validation
     'proxyController' => $this->createUrl('my_controller/get_tweets'), // You need to specify this!

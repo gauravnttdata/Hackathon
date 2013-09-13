@@ -20,7 +20,7 @@ class SiteController extends Controller
 			),
 			'get_tweets' => array(
 					'class' => 'ext.yii-new-tweet-master.TweetFetch'
-			)
+			),
 		);
 	}
 
