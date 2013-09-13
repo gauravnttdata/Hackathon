@@ -65,7 +65,7 @@ class TweetFetch extends CAction {
                         return false;
                     }
                 }
-                if ($JSONraw && isset($JSONraw['code']) && $JSONraw['code'] == 200) {
+                if (isset(Yii::app()->cache) && $JSONraw && isset($JSONraw['code']) && $JSONraw['code'] == 200) {
                     Yii::app()->cache->set($CFID, $JSON, $this->cache_interval * 60);
                 } else {
                     $this->consoleDebug("There was no json data.");
