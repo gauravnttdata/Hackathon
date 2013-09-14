@@ -14,7 +14,7 @@ $this->pageTitle=Yii::app()->name;
 	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
 </ul> -->
 
-<div style="width:100px;">
+<div style="width: 200px; float: left;">
 <?php
 $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'list',
@@ -40,7 +40,7 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 ?>
 </div>
 
-<div style="width:100px;">
+<div style="width: 1100px;">
 <?php 
 $this->widget('ext.yii-new-tweet-master.Tweets', array(
     'id' => 'twitter-feed',
