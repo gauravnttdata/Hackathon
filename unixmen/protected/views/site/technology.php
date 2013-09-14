@@ -53,7 +53,9 @@
 <tr class="even">
 <td>12</td><td>Eclipse</td><td>Development IDE</td>
 </tr>
-
+<tr class="odd">
+<td>12</td><td>GitHub</td><td>Repository</td>
+</tr>
 </tbody>
 </table>
 <?php $this->endWidget();?>

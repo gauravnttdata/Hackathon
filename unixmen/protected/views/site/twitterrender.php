@@ -12,7 +12,7 @@ $this->widget('ext.yii-new-tweet-master.Tweets', array(
 		'options' => array(
 				'avatar_size' => 32,
 				'template' => '{profile_image_tag}{user} {text}  {time}  {reply_action}  {retweet_action}  {favorite_action}',
-				'count' => 12
+				'count' => 6
 		)
 ));
 
