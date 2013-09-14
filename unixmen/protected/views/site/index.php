@@ -20,19 +20,18 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'list',
 	'items' => array(
 		array('label'=>'Politician', 'itemOptions'=>array('class'=>'nav-header')),
-			array('label'=>'Narendra Modi', 'url'=>'#', 'itemOptions'=>array('class'=>'active')),
-			array('label'=>'Rahul Gandhi', 'url'=>'#'),
-			array('label'=>'Manmohan Singh', 'url'=>'#'),
-			array('label'=>'Nitish Kumar', 'url'=>'#'),
+			array('label'=>'Narendra Modi', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi')), 'itemOptions'=>array('class'=>'active')),			
+			array('label'=>'Manmohan Singh', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
+			array('label'=>'Nitish Kumar', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
 		array('label'=>'Gernalist', 'itemOptions'=>array('class'=>'nav-header')),
-			array('label'=>'Barkha Dutt', 'url'=>'#'),
-			array('label'=>'Rajdeep Sardesai', 'url'=>'#'),
+			array('label'=>'Barkha Dutt', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
+			array('label'=>'Rajdeep Sardesai', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
 		array('label'=>'Hollywood', 'itemOptions'=>array('class'=>'nav-header')),
-			array('label'=>'Barkha Dutt', 'url'=>'#'),
-			array('label'=>'Rajdeep Sardesai', 'url'=>'#'),
+			array('label'=>'Barkha Dutt', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
+			array('label'=>'Rajdeep Sardesai', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
 		array('label'=>'Bollywood', 'itemOptions'=>array('class'=>'nav-header')),
-			array('label'=>'Amitabh', 'url'=>'#'),
-			array('label'=>'Amir khan', 'url'=>'#'),
+			array('label'=>'Amitabh', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
+			array('label'=>'Amir khan', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
 		'',
 		array('label'=>'Help', 'url'=>'#'),
 	)
@@ -41,23 +40,41 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 </div>
 
 <div style="float: left; width: 930px;">
-<?php 
-$this->widget('ext.yii-new-tweet-master.Tweets', array(
-    'id' => 'twitter-feed',
-    'csrfToken' => true, // set this to true if you enabled CSRF validation
-    'proxyController' => $this->createUrl('site/get_tweets'), // You need to specify this!
-    'username' => array('narendramodi'), // as you can see you can add an array of usernames
-    'cssFile' => false, // if you don't want the default CSS file
-    //'cssFile'=>Yii::app()->theme->baseUrl.'/css/tweet-master.css', // customize your twitter css file
-    'options' => array(
-        'avatar_size' => 32,
-        'template' => '{user} {text} - {time} - {reply_action} - {retweet_action} - {favorite_action}',
-        'count' => 6
-    )
-));?>
+<?php
+if(isset($_GET['celeb'])){
+	$this->widget('ext.yii-new-tweet-master.Tweets', array(
+	    'id' => 'twitter-feed',
+	    'csrfToken' => true, // set this to true if you enabled CSRF validation
+	    'proxyController' => $this->createUrl('site/get_tweets'), // You need to specify this!
+	    'username' => array('narendramodi'), // as you can see you can add an array of usernames
+	    'cssFile' => false, // if you don't want the default CSS file
+	    //'cssFile'=>Yii::app()->theme->baseUrl.'/css/tweet-master.css', // customize your twitter css file
+	    'options' => array(
+	        'avatar_size' => 32,
+	        'template' => '{user} {text} - {time} - {reply_action} - {retweet_action} - {favorite_action}',
+	        'count' => 6
+	    )
+	));
+}else{
+	
+
+?>
+    <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit', array(
+    	'heading'=>'Hello, world!',
+    )); ?>
+     
+    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p>
+    <?php $this->widget('bootstrap.widgets.TbButton', array(
+	    'type'=>'primary',
+	    'size'=>'large',
+	    'label'=>'Learn more',
+    )); ?>
+    </p>
+     
+    <?php $this->endWidget(); 
+}   
+?>
 </div>
 
-<p style="fload:left;">For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+
