@@ -16,18 +16,26 @@ $this->pageTitle=Yii::app()->name;
 
 <?php 
 
-$this->widget('bootstrap.widgets.TbButtonGroup', array(
-		'size'=>'small',
-		'type'=>'info', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
-		'buttons'=>array(
-			array('label'=>'Inverse', 'items'=>array(
-			array('label'=>'Action', 'url'=>'#'),
-			array('label'=>'Another action', 'url'=>'#'),
-			array('label'=>'Something else', 'url'=>'#'),
-			'---',
-			array('label'=>'Separate link', 'url'=>'#'),
-			)),
-		),
+$this->widget('bootstrap.widgets.TbMenu', array(
+	'type'=>'list',
+	'items' => array(
+		array('label'=>'Politician', 'itemOptions'=>array('class'=>'nav-header')),
+			array('label'=>'Narendra Modi', 'url'=>'#', 'itemOptions'=>array('class'=>'active')),
+			array('label'=>'Rahul Gandhi', 'url'=>'#'),
+			array('label'=>'Manmohan Singh', 'url'=>'#'),
+			array('label'=>'Nitish Kumar', 'url'=>'#'),
+		array('label'=>'Gernalist', 'itemOptions'=>array('class'=>'nav-header')),
+			array('label'=>'Barkha Dutt', 'url'=>'#'),
+			array('label'=>'Rajdeep Sardesai', 'url'=>'#'),
+		array('label'=>'Hollywood', 'itemOptions'=>array('class'=>'nav-header')),
+			array('label'=>'Barkha Dutt', 'url'=>'#'),
+			array('label'=>'Rajdeep Sardesai', 'url'=>'#'),
+		array('label'=>'Bollywood', 'itemOptions'=>array('class'=>'nav-header')),
+			array('label'=>'Amitabh', 'url'=>'#'),
+			array('label'=>'Amir khan', 'url'=>'#'),
+		'',
+		array('label'=>'Help', 'url'=>'#'),
+	)
 ));
 
 
