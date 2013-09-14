@@ -76,9 +76,9 @@ if(isset($_GET['celeb'])){
     	'heading'=>'Hello, Welcome to Hackathon!',
     )); ?>
      
-    <p>In this Application, you can check category wise twitter updates for celebrities.</p>
+    <p>In this Application, you can check category wise Twitter updates for celebrities.</p>
     
-    <p>Technology used in this project is Vagrant, Virtualbox, Ubuntu 12.04, XAMPP, PHP, Yii Framework, Yii Booster, JSON, AJAX, JQuery and Eclipse.</p>
+    
     <?php $this->endWidget(); 
 }
 

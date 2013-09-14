@@ -1,0 +1,58 @@
+<p>Technology used in this project is Vagrant, Virtualbox, Ubuntu 12.04, XAMPP, PHP, Yii Framework, Yii Booster, JSON, AJAX, JQuery and Eclipse.</p>
+<?php $box = $this->beginWidget('bootstrap.widgets.TbBox', array(
+		'title' => 'Advanced Box',
+		'headerIcon' => 'icon-th-list',
+		// when displaying a table, if we include bootstra-widget-table class
+// the table will be 0-padding to the box
+		'htmlOptions' => array('class'=>'bootstrap-widget-table')
+));?>
+<table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>Technology</th>
+<th>Why used?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td><td>Vagrant</td><td>To Setup virtual Ubuntu environment in windows machine.</td>
+</tr>
+<tr class="even">
+<td>2</td><td>Virtualbox</td><td>To running Ubuntu Machine.</td>
+</tr>
+<tr class="odd">
+<td>3</td><td>Ubuntu 12.04</td><td>To setup the project in production like environment.</td>
+</tr>
+<tr class="even">
+<td>3</td><td>XAMPP</td><td>To Deploy a PHP project</td>
+</tr>
+<tr class="odd">
+<td>3</td><td>Yii Framework</td><td>Easy to install, MVC architecture</td>
+</tr>
+<tr class="even">
+<td>3</td><td>Yii Booster</td><td>To Boost UI of project.</td>
+</tr>
+<tr class="odd">
+<td>3</td><td>yii-new-tweet-master</td><td>Its a extention to use Tweeter API.</td>
+</tr>
+<tr class="even">
+<td>3</td><td>PHP</td><td>To Run Yii Framework.</td>
+</tr>
+
+<tr class="odd">
+<td>3</td><td>JSON</td><td>To render twitter updates as JSON object.</td>
+</tr>
+<tr class="even">
+<td>3</td><td>AJAX</td><td>To render update asynchoronuosly.</td>
+</tr>
+<tr class="odd">
+<td>3</td><td>JQuery</td><td>To enhance UI and use Ajax.</td>
+</tr>
+<tr class="even">
+<td>3</td><td>Eclipse</td><td>Development IDE</td>
+</tr>
+
+</tbody>
+</table>
+<?php $this->endWidget();?>
