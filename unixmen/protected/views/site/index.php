@@ -60,12 +60,14 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 <div style="float: left; width: 930px;">
 <?php
 if(isset($_GET['celeb'])){
-	$this->widget('bootstrap.widgets.TbBox', array(
-			'title' => @$_GET['celeb'],
-			'headerIcon' => 'icon-home',
-			'content' => $this->renderPartial('_twitterrender'),
-	));
-	
+?>	
+<div class="bootstrap-widget">
+	<div class="bootstrap-widget-header">
+		<i class="icon-home"></i><h3>NTTDATAAmericas</h3>
+	</div>
+	<div id="yw1" class="bootstrap-widget-content"><?php echo $this->renderPartial('_twitterrender');?></div>
+</div>
+<?php 
 }else{
 	
 
