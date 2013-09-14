@@ -57,7 +57,7 @@ if(isset($_GET['celeb'])){
 	    'id' => 'twitter-feed',
 	    'csrfToken' => true, // set this to true if you enabled CSRF validation
 	    'proxyController' => $this->createUrl('site/get_tweets'), // You need to specify this!
-	    'username' => array('narendramodi'), // as you can see you can add an array of usernames
+	    'username' => array($_GET['celeb']), // as you can see you can add an array of usernames
 	    'cssFile' => false, // if you don't want the default CSS file
 	    //'cssFile'=>Yii::app()->theme->baseUrl.'/css/tweet-master.css', // customize your twitter css file
 	    'options' => array(
