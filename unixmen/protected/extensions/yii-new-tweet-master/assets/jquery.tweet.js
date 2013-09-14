@@ -299,7 +299,7 @@
 						if (s.intro_text) list.before(intro);
 						list.empty();
 						
-						list.append($.map(tweets, function(o) { return "<li>"+o.profile_image_tag + t(s.template, o) + "</li>"; }).join('')).
+						list.append($.map(tweets, function(o) { return "<li>"+ t(s.template, o) + "</li>"; }).join('')).
 							children('li:first').addClass('tweet_first').end().
 							children('li:odd').addClass('tweet_even').end().
 							children('li:even').addClass('tweet_odd');

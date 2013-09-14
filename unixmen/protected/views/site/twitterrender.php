@@ -11,7 +11,7 @@ $this->widget('ext.yii-new-tweet-master.Tweets', array(
 		//'cssFile'=>Yii::app()->theme->baseUrl.'/css/tweet-master.css', // customize your twitter css file
 		'options' => array(
 				'avatar_size' => 32,
-				'template' => '{user} {text} - {time} - {reply_action} - {retweet_action} - {favorite_action}',
+				'template' => '{profile_image_tag}{user} {text}  {time}  {reply_action}  {retweet_action}  {favorite_action}',
 				'count' => 12
 		)
 ));
