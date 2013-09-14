@@ -19,8 +19,6 @@ $this->pageTitle=Yii::app()->name;
 $this->widget('bootstrap.widgets.TbButtonGroup', array(
 		'size'=>'small',
 		'type'=>'info', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
-		//'label' => 'Categories',
-		array('label'=>'Categories', 'url'=>'#'),
 		'buttons'=>array(
 			array('label'=>'Inverse', 'items'=>array(
 			array('label'=>'Action', 'url'=>'#'),
@@ -30,12 +28,6 @@ $this->widget('bootstrap.widgets.TbButtonGroup', array(
 			array('label'=>'Separate link', 'url'=>'#'),
 			)),
 		),
-));
-
-$this->widget('bootstrap.widgets.TbBox', array(
-		'title' => 'Basic Box',
-		'headerIcon' => 'icon-home',
-		'content' => 'My Basic Content (you can use renderPartial here too :))' // $this->renderPartial('_view')
 ));
 
 
