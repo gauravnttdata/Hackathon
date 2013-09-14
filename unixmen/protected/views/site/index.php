@@ -61,9 +61,9 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 <?php
 if(isset($_GET['celeb'])){
 	$this->widget('bootstrap.widgets.TbBox', array(
-			'title' => 'Basic Box',
+			'title' => @$_GET['celeb'],
 			'headerIcon' => 'icon-home',
-			'content' => $this->renderPartial('twitterrender')
+			'content' => $this->renderPartial('twitterrender'),
 	));
 	
 }else{
