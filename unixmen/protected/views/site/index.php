@@ -70,7 +70,7 @@ if(isset($_GET['celeb'])){
 	    'options' => array(
 	        'avatar_size' => 32,
 	        'template' => '{user} {text} - {time} - {reply_action} - {retweet_action} - {favorite_action}',
-	        'count' => 6
+	        'count' => 12
 	    )
 	));
 }else{
@@ -78,18 +78,12 @@ if(isset($_GET['celeb'])){
 
 ?>
     <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit', array(
-    	'heading'=>'Hello, world!',
+    	'heading'=>'Hello, Welcome to Hackathon!',
     )); ?>
      
-    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <p>
-    <?php $this->widget('bootstrap.widgets.TbButton', array(
-	    'type'=>'primary',
-	    'size'=>'large',
-	    'label'=>'Learn more',
-    )); ?>
-    </p>
-     
+    <p>In this Application, you can check category wise twitter updates for celebrities.</p>
+    
+    <p>Technology used in this project is Vagrant, Virtualbox, Ubuntu 12.04, XAMPP, PHP, Yii Framework, Yii Booster, JSON, AJAX, JQuery and Eclipse.</p>
     <?php $this->endWidget(); 
 }   
 ?>
