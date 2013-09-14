@@ -16,22 +16,33 @@ $this->pageTitle=Yii::app()->name;
 
 <div style="width: 200px; float: left;">
 <?php
+function getSeleted(){
+	
+}
 $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'list',
 	'items' => array(
 		array('label'=>'Politician', 'itemOptions'=>array('class'=>'nav-header')),
-			array('label'=>'Narendra Modi', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi')), 'itemOptions'=>array('class'=>'active')),			
-			array('label'=>'Manmohan Singh', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
-			array('label'=>'Nitish Kumar', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
+			array('label'=>'Narendra Modi', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi')), 'itemOptions'=>array('class'=>'active')),			
+			array('label'=>'Manmohan Singh', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi'))),
+			array('label'=>'Nitish Kumar', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi'))),
+			array('label'=>'Shashi Tharoor', 'url'=>$this->createUrl('site/index',array('celeb'=>'ShashiTharoor'))),
+			
 		array('label'=>'Gernalist', 'itemOptions'=>array('class'=>'nav-header')),
-			array('label'=>'Barkha Dutt', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
-			array('label'=>'Rajdeep Sardesai', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
+			array('label'=>'Barkha Dutt', 'url'=>$this->createUrl('site/index',array('celeb'=>'BDUTT'))),
+			array('label'=>'Rajdeep Sardesai', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi'))),
+			array('label'=>'Prabhu Chawla', 'url'=>$this->createUrl('site/index',array('celeb'=>'PrabhuChawla'))),
 		array('label'=>'Hollywood', 'itemOptions'=>array('class'=>'nav-header')),
-			array('label'=>'Barkha Dutt', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
-			array('label'=>'Rajdeep Sardesai', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
+			array('label'=>'Barkha Dutt', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi'))),
+			array('label'=>'Rajdeep Sardesai', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi'))),
 		array('label'=>'Bollywood', 'itemOptions'=>array('class'=>'nav-header')),
-			array('label'=>'Amitabh', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
-			array('label'=>'Amir khan', 'url'=>$this->createUrl('site/get_tweets',array('celeb'=>'narendramodi'))),
+			array('label'=>'Amitabh Bachchan', 'url'=>$this->createUrl('site/index',array('celeb'=>'SrBachchan'))),
+			array('label'=>'Amir khan', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi'))),
+			array('label'=>'Anupam Kher', 'url'=>$this->createUrl('site/index',array('celeb'=>'AnupamPkher'))),
+		array('label'=>'Social Worker', 'itemOptions'=>array('class'=>'nav-header')),
+			array('label'=>'Kiran Bedi', 'url'=>$this->createUrl('site/index',array('celeb'=>'thekiranbedi'))),
+			array('label'=>'Amir khan', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi'))),
+			array('label'=>'Anupam Kher', 'url'=>$this->createUrl('site/index',array('celeb'=>'AnupamPkher'))),
 		'',
 		array('label'=>'Help', 'url'=>'#'),
 	)
