@@ -73,7 +73,7 @@ if(isset($_GET['celeb'])){
 
 ?>
     <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit', array(
-    	'heading'=>'Twitter Hack!',
+    	'heading'=>'Welcome!',
     )); ?>
      
     <p>In this Application, you can check category wise Twitter updates for celebrities.</p>
