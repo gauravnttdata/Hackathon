@@ -14,8 +14,8 @@ $this->pageTitle=Yii::app()->name;
 	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
 </ul> -->
 
-<?php 
-
+<div style="width:100px;">
+<?php
 $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'list',
 	'items' => array(
@@ -37,8 +37,11 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 		array('label'=>'Help', 'url'=>'#'),
 	)
 ));
+?>
+</div>
 
-
+<div style="width:100px;">
+<?php 
 $this->widget('ext.yii-new-tweet-master.Tweets', array(
     'id' => 'twitter-feed',
     'csrfToken' => true, // set this to true if you enabled CSRF validation
@@ -52,6 +55,7 @@ $this->widget('ext.yii-new-tweet-master.Tweets', array(
         'count' => 6
     )
 ));?>
+</div>
 
 <p>For more details on how to further develop this application, please read
 the <a href="http://www.yiiframework.com/doc/">documentation</a>.
