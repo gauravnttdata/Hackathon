@@ -257,7 +257,7 @@
 		}
 
 		return this.each(function(i, widget){
-			var list = $('<ul class="tweet_list">');
+			var list = $('<ul class="tweet_list" style="list-style-type: none;">');
 			var intro = '<p class="tweet_intro">'+s.intro_text+'</p>';
 			var outro = '<p class="tweet_outro">'+s.outro_text+'</p>';
 			var loading = $('<p class="loading">'+s.loading_text+'</p>');
@@ -282,9 +282,7 @@
 						}
 
 						var response = data.response;
-						$(widget).empty().append(list);
-						if (s.intro_text) list.before(intro);
-						list.empty();
+						
 
 						if(response.statuses !== undefined) {
 							resp = response.statuses;
@@ -296,7 +294,11 @@
 
 						var tweets = $.map(resp, extract_template_data);
 							tweets = $.grep(tweets, s.filter).sort(s.comparator).slice(0, s.count);
-
+						
+						$(widget).empty().append(list);
+						if (s.intro_text) list.before(intro);
+						list.empty();
+						
 						list.append($.map(tweets, function(o) { return "<li>"+o.profile_image_tag + t(s.template, o) + "</li>"; }).join('')).
 							children('li:first').addClass('tweet_first').end().
 							children('li:odd').addClass('tweet_even').end().
