@@ -1,3 +1,4 @@
+<div id="twitterRender">
 <?php
 $this->widget('ext.yii-new-tweet-master.Tweets', array(
 		'id' => 'twitter-feed',
@@ -12,4 +13,6 @@ $this->widget('ext.yii-new-tweet-master.Tweets', array(
 				'count' => 12
 		)
 ));
+
 ?>
+</div>
