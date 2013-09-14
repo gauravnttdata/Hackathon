@@ -19,7 +19,7 @@ $this->pageTitle=Yii::app()->name;
 $this->widget('bootstrap.widgets.TbButtonGroup', array(
 		'size'=>'small',
 		'type'=>'info', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
-		'label' => 'Categories',
+		//'label' => 'Categories',
 		'buttons'=>array(
 			array('label'=>'Inverse', 'items'=>array(
 			array('label'=>'Action', 'url'=>'#'),
