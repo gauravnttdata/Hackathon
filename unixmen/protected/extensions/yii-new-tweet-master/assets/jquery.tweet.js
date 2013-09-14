@@ -239,7 +239,8 @@
 			o.tweet_raw_text = o.retweet ? ('RT @'+o.retweeted_screen_name+' '+item.retweeted_status.text) : item.text; // avoid '...' in long retweets
 			o.tweet_text = $([linkURLs(o.tweet_raw_text, o.entities)]).linkUser().linkHash()[0];
 			o.tweet_text_fancy = $([o.tweet_text]).makeHeart()[0];
-
+			o.profile_image_url = item.user.profile_image_url;
+			
 			// Default spans, and pre-formatted blocks for common layouts
 			o.user = t('<a class="tweet_user" href="{user_url}">{screen_name}</a>', o);
 			o.join = s.join_text ? t(' <span class="tweet_join">{join_text}</span> ', o) : ' ';
@@ -250,6 +251,8 @@
 			o.reply_action = t('<a class="tweet_action tweet_reply" href="{reply_url}">reply</a>', o);
 			o.retweet_action = t('<a class="tweet_action tweet_retweet" href="{retweet_url}">retweet</a>', o);
 			o.favorite_action = t('<a class="tweet_action tweet_favorite" href="{favorite_url}">favorite</a>', o);
+			o.profile_image_tag = t('<img class ="profile_image_tag" src="{profile_image_url}"/>', o);
+			
 			return o;
 		}
 
@@ -294,7 +297,7 @@
 						var tweets = $.map(resp, extract_template_data);
 							tweets = $.grep(tweets, s.filter).sort(s.comparator).slice(0, s.count);
 
-						list.append($.map(tweets, function(o) { return "<li>" + t(s.template, o) + "</li>"; }).join('')).
+						list.append($.map(tweets, function(o) { return "<li>"+o.profile_image_tag + t(s.template, o) + "</li>"; }).join('')).
 							children('li:first').addClass('tweet_first').end().
 							children('li:odd').addClass('tweet_even').end().
 							children('li:even').addClass('tweet_odd');
