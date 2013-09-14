@@ -78,7 +78,7 @@ if(isset($_GET['celeb'])){
      
     <p>In this Application, you can check category wise Twitter updates for celebrities.</p>
     
-    
+    <?php echo $this->renderPartial('technology');?>
     <?php $this->endWidget(); 
 }
 
