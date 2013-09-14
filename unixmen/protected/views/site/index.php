@@ -76,7 +76,8 @@ if(isset($_GET['celeb'])){
     	'heading'=>'Hello, Welcome to Hackathon!',
     )); ?>
      
-    <p>In this Application, you can check category wise Twitter updates for celebrities. Please click on left side Navigation List.</p>
+    <p>In this Application, you can check category wise Twitter updates for celebrities.</p>
+    <p>Please click on left side Navigation List to see Twitter updates.</p>
     
     <?php echo $this->renderPartial('technology');?>
     <?php $this->endWidget(); 

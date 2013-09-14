@@ -1,6 +1,6 @@
-<p>Technology used in this project is as below.</p>
+
 <?php $box = $this->beginWidget('bootstrap.widgets.TbBox', array(
-		'title' => 'Advanced Box',
+		'title' => 'Technology used in this project is as below.',
 		'headerIcon' => 'icon-th-list',
 		// when displaying a table, if we include bootstra-widget-table class
 // the table will be 0-padding to the box
