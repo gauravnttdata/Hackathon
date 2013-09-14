@@ -19,7 +19,7 @@
 <td>1</td><td>Vagrant</td><td>To Setup virtual Ubuntu environment in windows machine.</td>
 </tr>
 <tr class="even">
-<td>2</td><td>Virtualbox</td><td>To running Ubuntu Machine.</td>
+<td>2</td><td>Virtual box</td><td>To running Ubuntu Machine.</td>
 </tr>
 <tr class="odd">
 <td>3</td><td>Ubuntu 12.04</td><td>To setup the project in production like environment.</td>
@@ -34,7 +34,7 @@
 <td>6</td><td>Yii Booster</td><td>To Boost UI of project.</td>
 </tr>
 <tr class="odd">
-<td>7</td><td>yii-new-tweet-master</td><td>Its a extention to use Tweeter API.</td>
+<td>7</td><td>yii-new-tweet-master</td><td>Its a extension to use Tweeter API.</td>
 </tr>
 <tr class="even">
 <td>8</td><td>PHP</td><td>To Run Yii Framework.</td>
