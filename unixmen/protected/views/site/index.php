@@ -17,16 +17,17 @@ $this->pageTitle=Yii::app()->name;
 <?php 
 
 $this->widget('bootstrap.widgets.TbButtonGroup', array(
-		'size'=>'large',
-		'type'=>'inverse', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+		'size'=>'small',
+		'type'=>'info', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+		'label' => 'Categories',
 		'buttons'=>array(
-		array('label'=>'Inverse', 'items'=>array(
-		array('label'=>'Action', 'url'=>'#'),
-		array('label'=>'Another action', 'url'=>'#'),
-		array('label'=>'Something else', 'url'=>'#'),
-		'---',
-		array('label'=>'Separate link', 'url'=>'#'),
-		)),
+			array('label'=>'Inverse', 'items'=>array(
+			array('label'=>'Action', 'url'=>'#'),
+			array('label'=>'Another action', 'url'=>'#'),
+			array('label'=>'Something else', 'url'=>'#'),
+			'---',
+			array('label'=>'Separate link', 'url'=>'#'),
+			)),
 		),
 ));
 
