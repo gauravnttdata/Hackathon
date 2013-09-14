@@ -1,3 +1,5 @@
+
+
 <div id="twitterRender">
 <?php
 $this->widget('ext.yii-new-tweet-master.Tweets', array(
