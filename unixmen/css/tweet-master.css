@@ -1,12 +1,31 @@
 .tweet_first tweet_odd{
+	float:left;
 	margin-top: 15px;
 }
 .tweet_even{
+	float:left;
 	margin-top: 15px;
 }
 .tweet_odd{
+	float:left;
 	margin-top: 15px;
 }
 .profile_image_tag{
-border-radius: 5px 5px 5px 5px;
+	float:left;
+	border-radius: 5px 5px 5px 5px;
+}
+.tweet_text{
+	float:left;
+}
+.tweet_time{
+	float:left;
+}
+.tweet_reply{
+	float:left;
+}
+.tweet_retweet{
+	float:left;
+}
+.tweet_favorite{
+	float:left;
 }
