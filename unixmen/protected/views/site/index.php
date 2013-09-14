@@ -65,7 +65,7 @@ if(isset($_GET['celeb'])){
 	<div class="bootstrap-widget-header">
 		<i class="icon-home"></i><h3>NTTDATAAmericas</h3>
 	</div>
-	<div id="yw1" class="bootstrap-widget-content"><?php echo $this->renderPartial('_twitterrender');?></div>
+	<div id="yw1" class="bootstrap-widget-content"><?php echo $this->renderPartial('twitterrender');?></div>
 </div>
 <?php 
 }else{
