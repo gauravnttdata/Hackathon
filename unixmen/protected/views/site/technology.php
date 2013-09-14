@@ -1,4 +1,4 @@
-<p>Technology used in this project is Vagrant, Virtualbox, Ubuntu 12.04, XAMPP, PHP, Yii Framework, Yii Booster, JSON, AJAX, JQuery and Eclipse.</p>
+<p>Technology used in this project is as below.</p>
 <?php $box = $this->beginWidget('bootstrap.widgets.TbBox', array(
 		'title' => 'Advanced Box',
 		'headerIcon' => 'icon-th-list',
