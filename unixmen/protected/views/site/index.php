@@ -26,6 +26,10 @@ function getSeleted($celebrity=''){
 $this->widget('bootstrap.widgets.TbMenu', array(
 	'type'=>'list',
 	'items' => array(
+		array('label'=>'NTT', 'itemOptions'=>array('class'=>'nav-header')),
+			array('label'=>'NTT DATA Americas', 'url'=>$this->createUrl('site/index',array('celeb'=>'NTTDATAAmericas')), 'itemOptions'=>getSeleted('NTTDATAAmericas')),
+			array('label'=>'NTT DATA UK', 'url'=>$this->createUrl('site/index',array('celeb'=>'NTT_DATA_UK')), 'itemOptions'=>getSeleted('NTT_DATA_UK')),
+			array('label'=>'NTT DATA Canada', 'url'=>$this->createUrl('site/index',array('celeb'=>'NTTDATACanada')), 'itemOptions'=>getSeleted('NTTDATACanada')),
 		array('label'=>'Politician', 'itemOptions'=>array('class'=>'nav-header')),
 			array('label'=>'Narendra Modi', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi')), 'itemOptions'=>getSeleted('narendramodi')),			
 			array('label'=>'Dr Manmohan Singh', 'url'=>$this->createUrl('site/index',array('celeb'=>'PMOIndia')), 'itemOptions'=>getSeleted('PMOIndia')),
@@ -34,7 +38,7 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 			
 		array('label'=>'Gernalist', 'itemOptions'=>array('class'=>'nav-header')),
 			array('label'=>'Barkha Dutt', 'url'=>$this->createUrl('site/index',array('celeb'=>'BDUTT')), 'itemOptions'=>getSeleted('BDUTT')),
-			array('label'=>'Rajdeep Sardesai', 'url'=>$this->createUrl('site/index',array('celeb'=>'narendramodi')), 'itemOptions'=>getSeleted('narendramodi')),
+			array('label'=>'Rajdeep Sardesai', 'url'=>$this->createUrl('site/index',array('celeb'=>'sardesairajdeep')), 'itemOptions'=>getSeleted('sardesairajdeep')),
 			array('label'=>'Prabhu Chawla', 'url'=>$this->createUrl('site/index',array('celeb'=>'PrabhuChawla')), 'itemOptions'=>getSeleted('PrabhuChawla')),
 		array('label'=>'Hollywood', 'itemOptions'=>array('class'=>'nav-header')),
 			array('label'=>'TomCruise', 'url'=>$this->createUrl('site/index',array('celeb'=>'TomCruise')), 'itemOptions'=>getSeleted('TomCruise')),
