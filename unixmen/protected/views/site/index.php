@@ -40,7 +40,7 @@ $this->widget('bootstrap.widgets.TbMenu', array(
 ?>
 </div>
 
-<div style="width: 1100px;">
+<div style="float: left; width: 930px;">
 <?php 
 $this->widget('ext.yii-new-tweet-master.Tweets', array(
     'id' => 'twitter-feed',
@@ -57,7 +57,7 @@ $this->widget('ext.yii-new-tweet-master.Tweets', array(
 ));?>
 </div>
 
-<p>For more details on how to further develop this application, please read
+<p style="fload:left;">For more details on how to further develop this application, please read
 the <a href="http://www.yiiframework.com/doc/">documentation</a>.
 Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
 should you have any questions.</p>
