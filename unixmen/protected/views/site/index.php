@@ -80,8 +80,21 @@ if(isset($_GET['celeb'])){
     
     <p>Technology used in this project is Vagrant, Virtualbox, Ubuntu 12.04, XAMPP, PHP, Yii Framework, Yii Booster, JSON, AJAX, JQuery and Eclipse.</p>
     <?php $this->endWidget(); 
-}   
+}
+
 ?>
+
 </div>
+
+<!-- 
+<?php     
+$this->widget('bootstrap.widgets.TbBox', array(
+    'title' => 'Basic Box',
+    'headerIcon' => 'icon-home',
+    'content' => 'My Basic Content (you can use renderPartial here too :))' // $this->renderPartial('_view')
+    ));
+?>
+
+-->
 
 
