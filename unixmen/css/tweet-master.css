@@ -15,20 +15,28 @@
 	border-radius: 5px 5px 5px 5px;
 }
 .tweet_text{
-	float:left;
+	float: left;
+    margin-left: 10px;
+    width: 90%;
 }
 .tweet_time{
-	float:left;
+	float: left;
+    margin-left: 10px;
 }
 .tweet_reply{
-	float:left;
+	float: left;
+    margin-left: 10px;
 }
 .tweet_retweet{
-	float:left;
+	float: left;
+    margin-left: 10px;
 }
 .tweet_favorite{
 	float:left;
+	margin-left: 10px;
 }
 .tweet_user{
-	float:left;
+	float: left;
+    margin-left: 10px;
+    width: 90%;
 }
