@@ -63,7 +63,7 @@ if(isset($_GET['celeb'])){
 	$this->widget('bootstrap.widgets.TbBox', array(
 			'title' => @$_GET['celeb'],
 			'headerIcon' => 'icon-home',
-			'content' => $this->renderPartial('twitterrender'),
+			'content' => $this->renderPartial('_twitterrender'),
 	));
 	
 }else{
