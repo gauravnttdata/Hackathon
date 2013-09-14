@@ -16,13 +16,17 @@ $this->pageTitle=Yii::app()->name;
 
 <?php 
 
-$this->widget('bootstrap.widgets.TbTabs', array(
-		'type'=>'pills',
-		'stacked'=>true,
-		'tabs'=>array(
-				array('label'=>'Home', 'content'=>'Home Content', 'active'=>true),
-				array('label'=>'Profile', 'content'=>'Profile Content'),
-				array('label'=>'Messages', 'content'=>'Messages Content'),
+$this->widget('bootstrap.widgets.TbButtonGroup', array(
+		'size'=>'large',
+		'type'=>'inverse', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+		'buttons'=>array(
+		array('label'=>'Inverse', 'items'=>array(
+		array('label'=>'Action', 'url'=>'#'),
+		array('label'=>'Another action', 'url'=>'#'),
+		array('label'=>'Something else', 'url'=>'#'),
+		'---',
+		array('label'=>'Separate link', 'url'=>'#'),
+		)),
 		),
 ));
 
